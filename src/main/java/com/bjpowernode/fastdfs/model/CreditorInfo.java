@@ -2,29 +2,57 @@ package com.bjpowernode.fastdfs.model;
 
 import java.math.BigDecimal;
 
+/**
+ * 债权人借款信息
+ */
 public class CreditorInfo {
+    /**
+     * 主键
+     */
     private Integer id;
-
+    /**
+     * 债权借款人姓名
+     */
     private String realName;
-
+    /**
+     * 债权借款人身份证
+     */
     private String idCard;
-
+    /**
+     * 债权借款人地址
+     */
     private String address;
-
+    /**
+     * 性别，1男2女
+     */
     private Integer sex;
-
+    /**
+     * 债权借款人电话
+     */
     private String phone;
-
+    /**
+     * 债权借款人借款金额
+     */
     private BigDecimal money;
-
+    /**
+     * 债权合同所在组
+     */
     private String groupName;
-
+    /**
+     * 债权合同所在路径
+     */
     private String remoteFilePath;
-
+    /**
+     * 文件上传前的名字，下载时命名回文件名字
+     */
     private String oldFileName;
-
+    /**
+     * 文件大小，用于记录下载进度
+     */
     private Long fileSize;
-
+    /**
+     * 文件类型，用于显示文件类型相同的图标
+     */
     private String fileType;
 
     public Integer getId() {
